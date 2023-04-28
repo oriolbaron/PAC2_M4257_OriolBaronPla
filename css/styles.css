@@ -1,47 +1,10 @@
-/*container*/
-
-.container {
-    width: 95%;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-paragraph-center {
-    width: 95%;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-paragraph-left {
-    width: 95%;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-body {
-    width: 95%;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container-quote {
-    width: 95%;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /*titles styles*/
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 36px;
     text-align: center;
-    color: rgb(240,93,80);
+    color: rgb(161, 85, 19);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -50,7 +13,7 @@ h1:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 36px;
     text-align: center;
-    color: rgba(240,93,80,0.5);
+    color: rgb(121, 21, 12);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -86,7 +49,7 @@ h5 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     text-align: left;
-    color: rgb(240,93,80);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -95,7 +58,7 @@ h5:hover {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     text-align: left;
-    color: rgba(240,93,80,0.5);
+    color: rgb(101, 101, 101);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -170,13 +133,17 @@ body {
 /*lists styles*/
 
 a {
-    color: rgb(240,93,80);
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-size: 18px;
+    text-align:center;
 }
 
 a:hover {
-    color: rgba(240,93,80,0.5);
+    color: rgba(147, 147, 147, 0.5);
     text-decoration: none;
+    font-size: 18px;
+    text-align:center;
 }
 
 .custom-list {
