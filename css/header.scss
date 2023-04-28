@@ -1,0 +1,104 @@
+/* == HEADER GRID ==================================================================================================================================== */
+/* ======================================================================================================================================================= */
+/* ======================================================================================================================================================= */
+
+.ep-header{
+  background-color: #fafafa;
+  font-family: Helvetica,Arial,sans-serif;
+
+  .toolbar{
+    &.toolbar_top{
+      position: relative;
+      z-index: 6000;
+      background-color: #fafafa;
+      border-bottom: 1px solid #d1d3d4;
+    }
+    &.toolbar_bottom{
+      display: block;
+      position: relative;
+      z-index: 16;
+      left: 0;
+      right: 0;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      background-color: #3d7ac1;
+      background: linear-gradient(#3d7ac1, #345e9c);
+      border-bottom: 1px solid #fff;
+      &.sticking{
+        position: fixed !important;
+        z-index: 1000;
+        top: 0;
+      }
+    }
+  }
+
+  .toolbar-grid{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1176px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: #326aab;
+    &:before, &:after{
+      box-sizing: content-box;
+    }
+    &.flex-end{
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+    }
+    @include smallscreen{
+      &.no-padding-m{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &.height-fix{
+      height: 40px;
+    }
+    @media screen and (min-width: 1020px) {
+      &.flex-end{
+        flex-direction: row;
+      }
+    }
+  }
+
+  .header{
+    position: relative;
+    z-index: 16;
+    padding-top: 10px;
+    background-color: #fafafa;
+  }
+
+}
+
+.back-overlay{
+  position: fixed;
+  z-index: 9;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  display: none;
+  @include transition(.2s);
+  &.display{
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .ep-header {
+    .sticking {
+      .toolbar-grid {
+        &.flex-end {
+          justify-content: flex-start;
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}

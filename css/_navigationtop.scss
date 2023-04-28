@@ -1,0 +1,485 @@
+/* == NAVIGATION MAIN ==================================================================================================================================== */
+/* ======================================================================================================================================================= */
+/* ======================================================================================================================================================= */
+
+/*Variables*/
+$greydark: #505154;
+$greylight: #c7c9cb;
+$greylighter: #eeefef;
+$blue: #326aab;
+$focuswaidark: #919191;
+
+.ep-header {
+
+  .focusable {
+    &:focus-within > .menu-level-0 {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    &.focus-within {
+      & > .menu-level-0 {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  .btn-open-menu {
+    padding: 13px 35px 11px 12px;
+    font-size: .8rem;
+    position: relative;
+    color: $greydark;
+    background-color: transparent;
+    display: block;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+    &:after {
+      position: absolute;
+      content: "";
+      right: 10px;
+      top: 42%;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      transform: rotate(45deg) translate(-50%);
+      background-color: transparent;
+      border-color: transparent $greydark $greydark transparent;
+      border-style: solid;
+      border-width: 1px;
+      @include transition(.3s);
+    }
+    &:hover, &:focus {
+      background-color: $greylighter;
+      border-color: $greylighter;
+      color: $blue;
+    }
+    &:focus {
+      outline: 3px dotted $focuswaidark;
+      outline-offset: -3px;
+    }
+  }
+  .nav-top {
+    position: relative;
+    display: flex;
+    .menu-container {
+      padding: 6px 0;
+      .focusable {
+        &:focus-within > .menu-level-0 {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    @include smallscreen {
+      width: 100%;
+      .menu-container {
+        width: 100%;
+        .menu-icon {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .nav-top {
+    z-index: 110;
+    /*First level*/
+    .menu-level-0 {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      min-width: 200px;
+      background-color: $greylighter;
+      border-color: $greylighter;
+      .level-0 {
+        display: block;
+        & > a {
+          text-decoration: none;
+          display: block;
+          padding: 0 10px;
+          margin-right: 0;
+          color: $greydark;
+          position: relative;
+          .content {
+            position: relative;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid $greylight;
+            .label {
+              display: block;
+              font-size: .82rem;
+              @include transition(all, .2s);
+            }
+          }
+          &:hover, &:focus {
+            .content {
+              .label {
+                transform: translateX(4px);
+              }
+            }
+          }
+          &:focus {
+            outline: 3px dotted $focuswaidark;
+            outline-offset: -3px;
+          }
+          &.icon-arrow-dropdown {
+            display: none;
+          }
+        }
+        & > .menu-level-1 {
+          width: 100%;
+        }
+        &:focus, &:focus-within {
+          & > .menu-level-1 {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        &.current {
+          & > a {
+            .content {
+              .current-element {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 4px;
+                width: 100%;
+                display: block;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+        &.has-menu-dropdown {
+          & > a {
+            &.icon-arrow-dropdown {
+              &:after {
+                content: '';
+                position: absolute;
+                right: 10px;
+                top: 48%;
+                transform: translateY(-50%) rotate(45deg);
+                width: 8px;
+                height: 8px;
+                background-color: transparent;
+                border-right: 1px solid $greydark;
+                border-bottom: 1px solid $greydark;
+                display: block;
+              }
+            }
+          }
+        }
+        &:nth-last-child(2) {
+          & > a {
+            .content {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+      @include smallscreen {
+        width: 100%;
+        top: 100%;
+      }
+    }
+    /*Second level*/
+    .menu-level-1 {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      min-width: 200px;
+      background-color: #eeefef;
+      display: inline-block;
+      box-shadow: none;
+      border: 1px solid $greylighter;
+      .level-1 {
+        & > a {
+          position: relative;
+          display: block;
+          padding: 0 10px;
+          .content {
+            font-size: 1.2em;
+            border-bottom: 1px solid #c7c9cb;
+            display: block;
+            padding: 10px 0;
+            color: $greydark;
+            .label {
+              display: block;
+              font-size: .82rem;
+              @include transition(all, .2s);
+            }
+          }
+          &:hover{
+            .content {
+              .label {
+                transform: translateX(4px);
+              }
+            }
+          }
+          &:focus {
+            outline: 3px dotted $focuswaidark;
+            outline-offset: -3px;
+          }
+          &.current {
+            &:before {
+              position: absolute;
+              display: block;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              width: 4px;
+              height: auto;
+              background-color: $blue;
+              content: " ";
+              color: $blue;
+            }
+          }
+        }
+        &:last-of-type {
+          & > a {
+            .content {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1020px) {
+    .btn-open-menu {
+      display: none;
+    }
+    /*Hide mobile version*/
+    .navigation-menu {
+      .ep_menu-access {
+        display: none !important;
+      }
+    }
+    /*Structure*/
+    .navigation-menu {
+      .menu-container {
+        margin: 0;
+        padding: 0 !important;
+      }
+    }
+    .nav-top {
+      /*First level*/
+      .menu-level-0 {
+        display: flex !important;
+        flex-wrap: wrap;
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        background-color: transparent;
+        border-color: #eeefef;
+        top: 0;
+        right: auto;
+        min-width: auto;
+        .level-0 {
+          display: inline-block;
+          & > a {
+            width: 100%;
+            display: inline-block;
+            padding: 0 8px 0;
+            position: relative;
+            .content {
+              position: relative;
+              display: block;
+              padding: 12px 0;
+              border-bottom: none;
+            }
+            &.icon-arrow-dropdown{
+              display: inline-block;
+            }
+            &:hover, &:focus {
+              .content {
+                .label {
+                  transform: translateY(-4px);
+                }
+              }
+            }
+            &.focusRestingAnchor{
+              padding: 0;
+            }
+          }
+          & > .menu-level-1 {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 110;
+            @include transition(all, .2s);
+          }
+          &:focus,
+          &:focus-within {
+            & > .menu-level-1 {
+              display: block;
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+          &.current {
+            & > a {
+              .content {
+                .current-element {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  height: 4px;
+                  width: 100%;
+                  display: block;
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+          &.has-menu-dropdown {
+            position: relative;
+            & > a {
+              padding-left: 10px;
+              padding-right: 30px;
+              &.icon-arrow-dropdown {
+                &:after {
+                  content: '';
+                  position: absolute;
+                  right: 12px;
+                  top: 48%;
+                  transform: translateY(-50%) rotate(45deg);
+                  width: 8px;
+                  height: 8px;
+                  background-color: transparent;
+                  border-right: 1px solid #000;
+                  border-bottom: 1px solid #000;
+                  display: block;
+                }
+                &[aria-expanded="true"] {
+                  background-color: $greylighter;
+                  color: $blue;
+                }
+              }
+              &:hover, &:focus {
+                background-color: $greylighter;
+                color: $blue;
+              }
+            }
+          }
+          &.focus-within {
+            & > .menu-level-1 {
+              display: block;
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+          &.nopadding-right {
+            a {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      /*Second level*/
+      .menu-level-1 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        min-width: 200px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: $greylighter;
+        display: inline-block;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        .level-1 {
+          & > a {
+            position: relative;
+            display: block;
+            padding: 0 10px 0;
+            .content {
+              font-size: .82rem;
+              color: $greydark;
+              display: block;
+              border-bottom: 1px solid $greylight;
+              padding: 14px 0;
+              .label {
+                display: block;
+                @include transition(all, .2s);
+              }
+            }
+            &:hover, &:focus {
+              .content {
+                .label {
+                  transform: translateX(4px);
+                }
+              }
+            }
+            &:focus {
+              outline: 3px dotted $focuswaidark;
+              outline-offset: -3px;
+            }
+            &.current {
+              &:before {
+                position: absolute;
+                display: block;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 4px;
+                height: auto;
+                background-color: $blue;
+                content: " ";
+                color: $blue;
+              }
+            }
+          }
+          &:last-of-type {
+            & > a {
+              .content {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+  @media screen and (min-width: 1020px) {
+    .ep-header{
+      .nav-top {
+        .menu-level-0 {
+          .level-0 {
+            & > .menu-level-1 {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1019px) {
+    .ep-header {
+      .nav-top {
+        .menu-level-0 {
+          display: block;
+          .level-0 {
+            & > .menu-level-1 {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}}
