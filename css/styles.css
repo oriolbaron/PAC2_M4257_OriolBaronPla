@@ -45,24 +45,6 @@ h4 {
     margin-bottom: 15px;
 }
 
-h5 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-h5:hover {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    text-align: left;
-    color: rgb(101, 101, 101);
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
 .active {
     font-weight: bold;
     font-style: italic;
