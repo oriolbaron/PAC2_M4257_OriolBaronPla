@@ -1,36 +1,213 @@
-/* Estils pel menú de navegació */
+/*container*/
 
-.nav {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
+.container {
+    width: 95%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.nav:hover {
-    background-color: #333;
-    color: #fff;
+.container-paragraph-center {
+    width: 95%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-  
-.nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-  
-.nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-  
 
+.container-paragraph-left {
+    width: 95%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-body {
+    width: 95%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-quote {
+    width: 95%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*titles styles*/
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: center;
+    color: rgb(240,93,80);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1:hover {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: center;
+    color: rgba(240,93,80,0.5);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: rgb(0,0,25);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: rgb(0,0,25);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: rgb(126, 126, 126);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(240,93,80);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h5:hover {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(240,93,80,0.5);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
 .active {
     font-weight: bold;
+    font-style: italic;
+}
+
+/*body styles*/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(0,0,25);
+}
+
+.body-list {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.strong-italic{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.body-centered {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(0,0,25);
+}
+
+.standalone-title{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(0,0,25);
+}
+
+.standalone-date{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(0,0,25);
+}
+
+.image-footer{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(0,0,25);
+}
+
+.link-image-footer{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    color: rgb(240,93,80);
+}
+
+.quote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(0,0,25);
+}
+
+/*lists styles*/
+
+a {
+    color: rgb(240,93,80);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(240,93,80,0.5);
+    text-decoration: none;
+}
+
+.custom-list {
+    list-style-type: disc;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(0, 0, 25);
+    color: rgb(255, 255, 255); 
+    padding: 20px;
+    text-align: center;
+}
+
+footer.hover {
+    background-color: rgb(0, 0, 25);
+    color: rgb(240,93,80); 
+    padding: 20px;
+    text-align: center;
+}
+
+/* others */
+
+html {
+    scroll-behavior: smooth;
 }
