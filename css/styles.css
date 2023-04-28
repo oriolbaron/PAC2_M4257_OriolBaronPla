@@ -19,8 +19,8 @@ h1:hover {
 }
 
 h2 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
     text-align: center;
     color: rgb(0,0,25);
     font-weight: bold;
@@ -28,8 +28,8 @@ h2 {
 }
 
 h3 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
     text-align: left;
     color: rgb(0,0,25);
     font-weight: bold;
@@ -75,9 +75,9 @@ p {
 /*lists styles*/
 
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     text-align:center;
 }
 
@@ -205,3 +205,12 @@ li {
 .grid-item:hover a {
     opacity: 1;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
