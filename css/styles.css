@@ -11,8 +11,8 @@ h1 {
 }
 
 h2 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
     text-align: center;
     color: rgb(0,0,25);
     font-weight: bold;
@@ -20,8 +20,8 @@ h2 {
 }
 
 h3 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
     text-align: left;
     color: rgb(0,0,25);
     font-weight: bold;
@@ -69,9 +69,9 @@ p {
 /*lists styles*/
 
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     text-align:center;
 }
 
@@ -227,6 +227,7 @@ li {
     opacity: 1;
 }
 
+<<<<<<< HEAD
 .slideshow {
     position: relative;
     height: 600px;
@@ -247,3 +248,13 @@ li {
 .slideshow img.active {
     opacity: 1;
 }
+=======
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+>>>>>>> 1e620ef6489804ba66cc6183707acaa1bf805df6
