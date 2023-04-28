@@ -77,52 +77,6 @@ body {
     color: rgb(0,0,25);
 }
 
-.body-list {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    text-align: left;
-}
-
-.strong-italic{
-    font-weight: bold;
-    font-style: italic;
-}
-
-.body-centered {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    color: rgb(0,0,25);
-}
-
-.standalone-title{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    color: rgb(0,0,25);
-}
-
-.standalone-date{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    text-align: center;
-    color: rgb(0,0,25);
-}
-
-.image-footer{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px;
-    text-align: center;
-    color: rgb(0,0,25);
-}
-
-.link-image-footer{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px;
-    font-style: italic;
-    color: rgb(240,93,80);
-}
-
 .quote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -181,4 +135,29 @@ footer.hover {
 
 html {
     scroll-behavior: smooth;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
 }
