@@ -75,7 +75,14 @@ body {
     font-size: 16px;
     text-align: left;
     color: rgb(0,0,25);
-    style="width: 500px;"
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(0,0,25);
+    width: 500px;
 }
 
 .quote {
@@ -83,6 +90,13 @@ body {
     font-size: 18px;
     text-align: left;
     color: rgb(0,0,25);
+}
+
+.link {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 /*lists styles*/
