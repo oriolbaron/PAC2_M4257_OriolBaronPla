@@ -87,21 +87,21 @@ body {
 /*lists styles*/
 
 a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     text-align:center;
 }
 
 a:hover {
-    color: rgba(147, 147, 147, 0.5);
+    color: rgba(149, 149, 149, 0.5);
     text-decoration: none;
     font-size: 18px;
     text-align:center;
 }
 
 .custom-list {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     text-align:center;
