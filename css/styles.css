@@ -220,7 +220,6 @@ li {
     opacity: 1;
 }
 
-<<<<<<< HEAD
 .slideshow {
     position: relative;
     height: 600px;
@@ -241,13 +240,3 @@ li {
 .slideshow img.active {
     opacity: 1;
 }
-=======
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
->>>>>>> 1e620ef6489804ba66cc6183707acaa1bf805df6
