@@ -10,7 +10,7 @@
 
 <body>
 	<header>
-		<header style="padding-top: 100px; padding-bottom: 100px;">
+		<header style="padding-top: 50px; padding-bottom: 50px;">
 			<nav class="menu">
 				<ul style="list-style-type:none;text-align:center;" class="container-menu">
 					<li><a href="index.html">Pàgina d'inici</a></li>
@@ -27,17 +27,22 @@
 			<h1>Curiositats de París</h1>
 			<br>
 			<h2>Tres curiositats sobre París</h2>
-			<p><strong>La Torre Eiffel:</strong><br>
-				El monument més emblemàtic de París va ser construït el 1889 per a l'Exposició Universal
+			<br>
+			<p><strong>La Torre Eiffel</strong></p>
+			<br>
+			<p>El monument més emblemàtic de París va ser construït el 1889 per a l'Exposició Universal
 				i va ser pensat per ser desmantellat després. No obstant això, a causa de la seva popularitat com a
 				atracció turística i la seva utilitat com a antena de radiodifusió, es va decidir mantenir-la dreta.</p>
-			<p><strong>El sistema de clavegueram:</strong><br>
-				París va ser una de les primeres ciutats a tenir un sistema de clavegueram
+			<br>
+			<p><strong>El sistema de clavegueram</strong></p>
+			<br>
+			<p>París va ser una de les primeres ciutats a tenir un sistema de clavegueram
 				modern. Va ser construït durant el regnat de Napoleó III a la dècada de 1850 i es diu que l'enginyer a
 				càrrec, Eugène Belgrand, va dissenyar el sistema per resistir una inundació catastròfica que mai va
 				arribar a succeir.</p>
-			<p><strong>El Museu del Louvre:</strong><br>
-				El museu més visitat del món es troba a París. S'estima que al voltant de 10 milions
+			<p><strong>El Museu del Louvre</strong></p>
+			<br>
+			<p>El museu més visitat del món es troba a París. S'estima que al voltant de 10 milions
 				de persones visiten el Louvre cada any per veure la seva vasta col·lecció d'art que inclou la coneguda
 				Mona Lisa de Leonardo da Vinci. A més, el Louvre va ser originalment un castell fortificat construït al
 				segle XII pel rei Felip August.</p>
@@ -67,12 +72,38 @@
 			</script>
 			<br>
 			<br>
+			<div class="image-grid"></div>
+			<script>
+				const imageGrid = document.querySelector(".image-grid");
+
+				images.forEach((image) => {
+  					const img = document.createElement("img");
+  					img.src = image;
+  					img.alt = "Image";
+  					imageGrid.appendChild(img);
+				});
+			</script>
+			<script>
+				const images = document.querySelectorAll(".image-grid img");
+				images.forEach((image) => {
+				image.addEventListener("mouseover", () => {
+					image.style.transform = "scale(1.1)";
+				});
+				image.addEventListener("mouseout", () => {
+					image.style.transform = "scale(1)";
+				});
+				});
+			</script>
+			<br>
+			<br>
 			<h3>Descobreix la ciutat d'una altra forma</h3>
 			<ul style="list-style-type:none;text-align:center;" class="container-menu" ;>
 				<li><a href="paris-bicicleta.html">Visitar París en bicicleta</a></li>
 				<li><a href="paris-lgtb.html">París i el col·lectiu LGTB</a></li>
 				<li><a href="paris-gratis.html">París en versió gratuïta</a></li>
 			</ul>
+			<br>
+			<br>
 			<br>
 		</main>
 
