@@ -252,12 +252,18 @@ li {
 
 .grid-container-text {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
   
 .grid-item-text {
-    background-color: #ddd;
+    background-color: #ffe3a0;
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
 }
