@@ -268,32 +268,23 @@ li {
     }
 }
 
-.card-media-container {
-    display: flex;
-    justify-content: space-between;
+.grid-container-media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
   
-.card {
-    width: 20%;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
+.grid-item {
     text-align: center;
 }
-
-.card img {
+  
+.grid-item img {
     max-width: 100%;
     height: auto;
 }
   
 @media screen and (max-width: 768px) {
-    .card {
-      width: 45%;
-    }
-}
-  
-@media screen and (max-width: 480px) {
-    .card {
-      width: 100%;
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
     }
 }
