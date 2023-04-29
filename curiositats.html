@@ -72,28 +72,6 @@
 			</script>
 			<br>
 			<br>
-			<div class="image-grid"></div>
-			<script>
-				const imageGrid = document.querySelector(".image-grid");
-
-				images.forEach((image) => {
-  					const img = document.createElement("img");
-  					img.src = image;
-  					img.alt = "Image";
-  					imageGrid.appendChild(img);
-				});
-			</script>
-			<script>
-				const images = document.querySelectorAll(".image-grid img");
-				images.forEach((image) => {
-				image.addEventListener("mouseover", () => {
-					image.style.transform = "scale(1.1)";
-				});
-				image.addEventListener("mouseout", () => {
-					image.style.transform = "scale(1)";
-				});
-				});
-			</script>
 			<br>
 			<br>
 			<h3>Descobreix la ciutat d'una altra forma</h3>
