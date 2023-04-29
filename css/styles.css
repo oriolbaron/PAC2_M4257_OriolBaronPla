@@ -250,22 +250,14 @@ li {
     opacity: 1;
 }
 
-.image-grid {
-    width: 100%;
-    height: 100%;
+.grid-container-text {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 }
-
-.image-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.image-grid img:hover {
-    position: relative;
-    z-index: 1;
+  
+.grid-item-text {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
 }
