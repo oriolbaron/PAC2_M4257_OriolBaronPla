@@ -280,6 +280,9 @@ li {
     transition: 0.3s;
     width: 100%;
     max-width: 300px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -294,12 +297,12 @@ li {
 }
 
 .card h2 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
