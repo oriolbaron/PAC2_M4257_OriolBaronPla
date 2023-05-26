@@ -41,6 +41,27 @@ h3 {
     padding-left: -10px;
 }
 
+.logo {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-logo-footer {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-left: -10px;
+}
+
 .active {
     font-weight: bold;
     font-style: italic;
