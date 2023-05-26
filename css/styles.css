@@ -47,7 +47,7 @@ h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    color: #7f2f2f;
+    color: #946b6b;
     text-align: center;
     display: inline-block;
     padding-bottom: 20px;
@@ -69,6 +69,19 @@ h3 {
     font-weight: 700;
     font-size: 30px;
     color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-left: -10px;
+}
+
+.text-logo-footer:hover {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #828282;
     text-align: center;
     display: inline-block;
     padding-bottom: 20px;
@@ -168,6 +181,14 @@ html {
     color: #000000;
     text-decoration: none;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .menu li {
@@ -335,4 +356,9 @@ li {
     .grid-container {
       grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.header-portada {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
