@@ -391,11 +391,11 @@ li {
 .foto-portada-home {
     width: 100%;
     height: 300px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw)); /* Clip-path inicial */
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 60%);
 }
 
 @media (max-width: 768px) {
     .foto-portada-home {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%); /* Nuevo clip-path para pantallas pequeñas */
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0 60%);
     }
 }
