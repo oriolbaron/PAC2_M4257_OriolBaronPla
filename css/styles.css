@@ -396,7 +396,7 @@ li {
 
 @media (max-width: 768px) {
     .foto-portada-home {
-      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      clip-path: polygon(75% 0%, 100% 0%, 25% 100%, 0% 100%);
       width: 90%;
       height: 400px;
     }
