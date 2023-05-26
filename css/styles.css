@@ -380,3 +380,22 @@ li {
     width: 100%;
     height: 100%;
 }
+
+.foto-portada-home-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.foto-portada-home {
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw)); /* Clip-path inicial */
+}
+
+@media (max-width: 768px) {
+    .foto-portada-home {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%); /* Nuevo clip-path para pantallas pequeñas */
+    }
+}
