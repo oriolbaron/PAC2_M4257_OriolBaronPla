@@ -391,12 +391,12 @@ li {
 .foto-portada-home {
     width: 90%;
     height: 400px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
 @media (max-width: 768px) {
     .foto-portada-home {
-      clip-path: polygon(75% 0%, 100% 0%, 25% 100%, 0% 100%);
+      clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
       width: 90%;
       height: 400px;
     }
