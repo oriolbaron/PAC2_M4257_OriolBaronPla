@@ -369,13 +369,6 @@ li {
 
 .iframe-container {
     position: relative;
-    width: 100%;
-}
-  
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 800px;
     height: 100%;
 }
@@ -389,7 +382,7 @@ li {
 
 .foto-portada-home {
     width: 90%;
-    height: 400px;
+    height: auto;
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
