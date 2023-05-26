@@ -389,15 +389,15 @@ li {
 }
 
 .foto-portada-home {
-    width: 100%;
+    width: 90%;
     height: 400px;
-    clip-path: polygon(0 0, 0 0, 100% 100%, 0 70%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 @media (max-width: 768px) {
     .foto-portada-home {
-      clip-path: polygon(0 0, 0 0, 100% 100%, 0 70%);
-      width: 100%;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      width: 90%;
       height: 400px;
     }
 }
