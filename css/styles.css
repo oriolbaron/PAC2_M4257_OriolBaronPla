@@ -515,12 +515,14 @@ li {
     display: inline-block;
     align-items: center;
     gap: 10px;
+    margin: 0 100px;
 }
   
 .image-icon {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s;
+    padding-bottom: 20px;
     text-align: center;
 }
 
