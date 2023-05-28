@@ -463,6 +463,14 @@ li {
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .image-main {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .text-image-main h1 {
     font-size: 30px;
 }
