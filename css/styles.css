@@ -389,7 +389,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 50 px;
+    margin-right: 50 px;
 }
 
 @media (max-width: 768px) {
@@ -397,7 +397,7 @@ li {
         display: block;
         align-items: center;
         justify-content: center;
-        margin-left: 50 px;
+        width: 90%;
     }
 }
 
