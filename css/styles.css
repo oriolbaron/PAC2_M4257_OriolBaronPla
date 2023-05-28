@@ -503,3 +503,43 @@ li {
     text-align: center;
     margin-top: 20px;
 }
+
+.container-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.column-highlights {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.image-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.image-icon:hover {
+    width: 24px;
+    height: 24px;
+    transform: scale(1.2);
+}
+  
+.text-highlights {
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .column {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+    
+    .icon {
+      margin-bottom: 5px;
+    }
+}
