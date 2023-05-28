@@ -212,12 +212,14 @@ footer {
     text-decoration: none;
     display: block;
     transition: transform 0.3s ease;
+    color: #ffffff;
 }
 
 .footer-links li:hover {
     text-decoration: none;
     display: block;
     transform: translateX(10px);
+    color: #ffffff;
 }
 
 .footer-links-text a {
