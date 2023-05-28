@@ -38,8 +38,8 @@ h3 {
     text-align: center;
     display: inline-block;
     padding-bottom: 20px;
-    padding-left: -10px;
     transition: transform 0.3s ease;
+    width: 90%;
 }
 
 .text-logo:hover {
@@ -52,7 +52,6 @@ h3 {
     text-align: center;
     display: inline-block;
     padding-bottom: 20px;
-    padding-left: -10px;
     transform: translateX(10px);
 }
 
@@ -386,10 +385,9 @@ li {
 }
 
 .foto-portada-home-container {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
-    margin-right: 50 px;
 }
 
 @media (max-width: 768px) {
@@ -406,6 +404,7 @@ li {
     height: 400px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     overflow: hidden;
+    margin-right: 50 px;
 }
 
 @media (max-width: 768px) {
