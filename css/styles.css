@@ -162,7 +162,7 @@ footer {
 }
 
 .footer-container {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
@@ -181,9 +181,29 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.footer-links-text {
     text-decoration: none;
     color: #ffffff;
 }
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column-right {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer-column-right {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+}
+
 
 /* others */
 
