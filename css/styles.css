@@ -190,7 +190,12 @@ footer {
     color: #ffffff;
 }
 
-.footer-links-text a {
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-links-text {
     color: #ffffff;
 }
 
@@ -489,8 +494,8 @@ li {
 }
   
 .image-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.7s;
     padding-bottom: 20px;
     text-align: center;
@@ -499,7 +504,7 @@ li {
 .image-icon:hover {
     width: 40px;
     height: 40px;
-    transform: translateY(10px);
+    transform: translateY(-10px);
     text-align: center;
 }
   
