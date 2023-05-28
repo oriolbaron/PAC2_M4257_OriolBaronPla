@@ -387,12 +387,12 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 
 @media (max-width: 768px) {
     .image-main {
-      clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
       width: 100%;
       height: auto;
     }
