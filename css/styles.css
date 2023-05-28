@@ -368,9 +368,21 @@ li {
 }
 
 .iframe-container {
+    box-sizing: border-box;
+    margin: 100px auto;
     position: relative;
     width: 800px;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .iframe-container {
+        box-sizing: border-box;
+        margin: 100px auto;
+        position: relative;
+        width: full-width;
+        height: 100%;
+    }
 }
 
 .foto-portada-home-container {
