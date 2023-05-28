@@ -122,38 +122,6 @@ p {
     color: rgb(255, 255, 255);
 }
 
-/*lists styles*/
-
-a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 16px;
-    text-align:center;
-    margin-right: 20px;
-}
-
-a:hover {
-    color: rgba(149, 149, 149, 0.5);
-    text-decoration: none;
-    font-size: 16px;
-    text-align:center;
-}
-
-.custom-list {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 18px;
-    text-align:center;
-}
-
-.custom-list:hover {
-    color: rgba(147, 147, 147, 0.5);
-    text-decoration: none;
-    font-size: 18px;
-    text-align:center;
-}
-
-
 /* footer */
 
 footer {
