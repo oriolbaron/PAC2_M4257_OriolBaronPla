@@ -180,23 +180,18 @@ footer {
     text-decoration: none;
     display: block;
     transition: transform 0.3s ease;
-    color: #ffffff;
 }
 
 .footer-links li:hover {
     text-decoration: none;
     display: block;
     transform: translateX(10px);
-    color: #ffffff;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #ffffff;
-}
-
-.footer-links-text {
-    color: #ffffff;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -522,4 +517,26 @@ li {
     .image-icon {
       margin-bottom: 5px;
     }
+}
+
+
+
+.container-copyright-links {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.container-copyright-links li {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.container-copyright-links li:hover {
+    text-decoration: none;
+    display: block;
+    transform: translateX(10px);
+    text-align: center;
 }
