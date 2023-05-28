@@ -392,6 +392,15 @@ li {
     margin-left: 50 px;
 }
 
+@media (max-width: 768px) {
+    .foto-portada-home-container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50 px;
+    }
+}
+
 .image-main-container {
     width: 400px;
     height: 400px;
