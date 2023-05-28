@@ -157,17 +157,32 @@ a:hover {
 /* footer */
 
 footer {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 0); 
     padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column-left {
+    flex-basis: 50%;
+}
+
+.footer-column-right {
+    flex-basis: 50%;
     text-align: center;
 }
 
-footer.hover {
-    background-color: rgb(0, 0, 25);
-    color: rgb(240,93,80); 
-    padding: 20px;
-    text-align: center;
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* others */
@@ -432,4 +447,3 @@ li {
     text-align: center;
     margin-top: 20px;
 }
-  
