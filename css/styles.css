@@ -199,10 +199,20 @@ footer {
     display: block;
 }
 
-.footer-links-text li {
+.footer-links li {
     text-decoration: none;
-    color: #ffffff;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.footer-links li:hover {
+    text-decoration: none;
+    display: block;
+    transform: translateX(10px);
+}
+
+.footer-links {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
