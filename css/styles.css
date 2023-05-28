@@ -436,7 +436,6 @@ li {
         display: block;
         align-items: center;
         justify-content: center;
-        width: 90%;
     }
 }
 
@@ -454,6 +453,7 @@ li {
         height: 300px;
         clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
         overflow: hidden;
+        text-align: center;
     }
 }
 
