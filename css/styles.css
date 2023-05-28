@@ -505,13 +505,14 @@ li {
 }
 
 .container-highlights {
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 20px;
+    margin: 100px 0;
 }
   
 .column-highlights {
-    display: flex;
+    display: inline-block;
     align-items: center;
     gap: 10px;
 }
@@ -520,12 +521,14 @@ li {
     width: 24px;
     height: 24px;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .image-icon:hover {
     width: 24px;
     height: 24px;
     transform: scale(1.2);
+    text-align: center;
 }
   
 .text-highlights {
@@ -533,13 +536,13 @@ li {
 }
 
 @media screen and (max-width: 767px) {
-    .column {
+    .column-highlights {
       flex-direction: column;
       align-items: flex-start;
       gap: 5px;
     }
     
-    .icon {
+    .image-icon {
       margin-bottom: 5px;
     }
 }
