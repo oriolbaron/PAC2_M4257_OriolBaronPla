@@ -27,7 +27,7 @@
 		</header>
 
 		<main>
-			<img src="img/paris-pano.jpg" style="width:100%; height:auto;" alt="París">
+			<img src="img/paris-lgtb-noia.jpg" style="width:100%; height:auto;" alt="París">
 			<br>
 			<h1>Curiositats de París</h1>
 			<br>
@@ -55,27 +55,12 @@
 			</div>
 			<br>
 			<div class="slideshow">
-				<img src="img/arc-triomf.jpg" class="active">
-				<img src="img/moulin-rouge.jpg">
-				<img src="img/torre-eiffel.jpg">
-				<img src="img/notredame.jpg">
+				<img src="img/arc-triomf.jpg" class="active" alt="arc de triomf de parís">
+				<img src="img/moulin-rouge.jpg" alt="moulin rouge de parís">
+				<img src="img/torre-eiffel.jpg" alt="torre eiffel de parís">
+				<img src="img/notredame.jpg" alt="notre dame de parís">
 			</div>
-			<script>
-				var slideIndex = 0;
-				showSlides();
-
-				function showSlides() {
-					var i;
-					var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
-					for (i = 0; i < slides.length; i++) {
-						slides[i].classList.remove("active");
-					}
-					slideIndex++;
-					if (slideIndex > slides.length) { slideIndex = 1 }
-					slides[slideIndex - 1].classList.add("active");
-					setTimeout(showSlides, 7000); // Change image every 7 seconds
-				}
-			</script>
+			<script src="./javascript/slide-curiositats.js"></script>
 			<br>
 			<br>
 			<h3>Descobreix la ciutat d'una altra forma</h3>
