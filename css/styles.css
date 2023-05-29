@@ -436,6 +436,7 @@ li {
         display: block;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -547,4 +548,12 @@ li {
     display: block;
     transform: translateX(10px);
     text-align: center;
+}
+
+.container-menu-highlights {
+    text-align: center;
+    justify-content: center;
+    color:#000000;
+    text-decoration: none;
+    font-size: 16px;
 }
