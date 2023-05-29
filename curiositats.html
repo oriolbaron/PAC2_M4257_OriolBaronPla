@@ -6,12 +6,16 @@
 	<title>Curiositats de París</title>
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo-icon-32px.svg" type="image/x-icon">
 </head>
 
 <body>
 	<header>
-		<header
-			style="background-image: url('img/paris-pano.jpg'); max-width:100%; padding-top: 100px; padding-bottom: 100px;">
+		<header style="padding-top: 50px; padding-bottom: 50px;">
+			<div class="logo">
+				<img src="./img/logo.png" alt="Logo en forma de cor" width="60" height="60">
+				<a href="/index.html" class="text-logo">Descobreix París</a>
+			</div>
 			<nav class="menu">
 				<ul style="list-style-type:none;text-align:center;" class="container-menu">
 					<li><a href="index.html">Pàgina d'inici</a></li>
@@ -23,55 +27,70 @@
 		</header>
 
 		<main>
+			<img src="img/paris-lgtb-noia.jpg" style="width:100%; height:auto;" alt="París">
+			<br>
 			<h1>Curiositats de París</h1>
 			<br>
-			<h2>Tres curiositats sobre París</h2>
-			<p><strong>La Torre Eiffel:</strong> El monument més emblemàtic de París va ser construït el 1889 per a l'Exposició Universal
+			<div class="grid-container-text" style="text-align: center;">
+			<div class="grid-item-text"><strong>Torre Eiffel</strong> 
+			<p>El monument més emblemàtic de París va ser construït el 1889 per a l'Exposició Universal
 				i va ser pensat per ser desmantellat després. No obstant això, a causa de la seva popularitat com a
 				atracció turística i la seva utilitat com a antena de radiodifusió, es va decidir mantenir-la dreta.</p>
-			<p><strong>El sistema de clavegueram:</strong> París va ser una de les primeres ciutats a tenir un sistema de clavegueram
+			</div>
+			<div class="grid-item-text"><strong>El sistema de clavegueram</strong>
+			<p>París va ser una de les primeres ciutats a tenir un sistema de clavegueram
 				modern. Va ser construït durant el regnat de Napoleó III a la dècada de 1850 i es diu que l'enginyer a
 				càrrec, Eugène Belgrand, va dissenyar el sistema per resistir una inundació catastròfica que mai va
 				arribar a succeir.</p>
-			<p><strong>El Museu del Louvre:</strong> El museu més visitat del món es troba a París. S'estima que al voltant de 10 milions
+			</div>
+			<div class="grid-item-text"><strong>El Museu del Louvre</strong>
+			<p>El museu més visitat del món es troba a París. S'estima que al voltant de 10 milions
 				de persones visiten el Louvre cada any per veure la seva vasta col·lecció d'art que inclou la coneguda
 				Mona Lisa de Leonardo da Vinci. A més, el Louvre va ser originalment un castell fortificat construït al
 				segle XII pel rei Felip August.</p>
+			</div>
 			<br>
-			<h3>També et pot interessar...</h3>
-			<ul style="list-style-type:none;text-align:center;" class="container-menu";>
-				<li><a href="paris-bicicleta.html">Visitar París en bicicleta</a></li>
-				<li><a href="paris-lgtb.html">París i el col·lectiu LGTB</a></li>
-				<li><a href="paris-gratis.html">París en versió gratuïta</a></li>
-			</ul>
+			<br>
+			<br>
+			</div>
 			<br>
 			<div class="slideshow">
-				<img src="img/arc-triomf.jpg" class="active">
-				<img src="img/moulin-rouge.jpg">
-				<img src="img/torre-eiffel.jpg">
-				<img src="img/notredame.jpg">
+				<img src="img/arc-triomf.jpg" class="active" alt="arc de triomf de parís">
+				<img src="img/moulin-rouge.jpg" alt="moulin rouge de parís">
+				<img src="img/torre-eiffel.jpg" alt="torre eiffel de parís">
+				<img src="img/notredame.jpg" alt="notre dame de parís">
 			</div>
-			<script>
-				var slideIndex = 0;
-				showSlides();
-
-				function showSlides() {
-					var i;
-					var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
-					for (i = 0; i < slides.length; i++) {
-						slides[i].classList.remove("active");
-					}
-					slideIndex++;
-					if (slideIndex > slides.length) { slideIndex = 1 }
-					slides[slideIndex - 1].classList.add("active");
-					setTimeout(showSlides, 5000); // Change image every 5 seconds
-				}
-			</script>
+			<script src="./javascript/slide-curiositats.js"></script>
+			<br>
+			<br>
+			<img class="image-icon" src="./img/eye.svg" alt="Recomanacions d'activitats">
+			<h3>Descobreix la ciutat d'una altra forma</h3>
+			<ul style="list-style-type:none;text-align:center;" class="container-menu";>
+				<li><a class="container-menu-highlights" href="paris-bicicleta.html">Visitar París en bicicleta</a></li>
+				<li><a class="container-menu-highlights" href="paris-lgtb.html">París i el col·lectiu LGTB</a></li>
+				<li><a class="container-menu-highlights" href="paris-gratis.html">París en versió gratuïta</a></li>
+			</ul>
+			<br>
+			<br>
 			<br>
 		</main>
 
 		<footer>
-			<p><a class="link" href="enllaços.html">Enllaços</a></p>
+			<div class="footer-container">
+				<div class="footer-column-left">
+					<ul class="footer-links">
+						<li><a href="index.html">Pàgina d'inici</a></li>
+						<li><a href="visites.html">Què he de fer a París?</a></li>
+						<li><a href="curiositats.html">Curiositats</a></li>
+						<li><a href="plans.html">Plans romàntics</a></li>
+						<li><a href="enllaços.html">Enllaços</a></li>
+					</ul>
+				</div>
+				<div class="footer-column-right">
+					<img src="./img/logo.png" alt="Logo en forma de cor" width="40" height="40">
+					<a href="/index.html" class="text-logo-footer">Descobreix París</a>
+				</div>
+			</div>
 		</footer>
 </body>
 

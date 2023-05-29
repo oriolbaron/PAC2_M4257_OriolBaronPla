@@ -6,13 +6,17 @@
 	<title>Descobreix París</title>
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo-icon-32px.svg" type="image/x-icon">
 </head>
 
 <body>
-	<header>
-		<header style="background-image: url('img/paris-pano.jpg'); max-width:100%; padding-top: 100px; padding-bottom: 100px;">
+	<header class="header-portada">
+		<div class="logo">
+			<img src="./img/logo.png" alt="Logo en forma de cor" width="60" height="60">
+			<a href="/index.html" class="text-logo">Descobreix París</a>
+		</div>
 		<nav class="menu">
-			<ul style="list-style-type:none;text-align:center;" class="container-menu";>
+			<ul style="list-style-type:none;text-align:center;" class="container-menu" ;>
 				<li><a class="active" href="index.html">Pàgina d'inici</a></li>
 				<li><a href="visites.html">Què he de fer a París?</a></li>
 				<li><a href="curiositats.html">Curiositats</a></li>
@@ -22,35 +26,55 @@
 	</header>
 
 	<main>
-		<h1>Benvinguts/des a París!</h1>
-		<p>París és la capital de França i una de les ciutats més icòniques del món.</p>
-		<p>Ubicada al centre del país, la ciutat és coneguda per la seva rica història, cultura i patrimoni arquitectònic.</p>
-		<br>
-		<h3>Descobreix la ciutat d'una altra forma</h3>
-			<ul style="list-style-type:none;text-align:center;" class="container-menu";>
-				<li><a href="paris-bicicleta.html">Visitar París en bicicleta</a></li>
-				<li><a href="paris-lgtb.html">París i el col·lectiu LGTB</a></li>
-				<li><a href="paris-gratis.html">París en versió gratuïta</a></li>
-			</ul>
-		<br>
-		<div class="grid-container">
-			<div class="grid-item">
-				<img src="img/eiffel.jpg" width="300" height="300" alt="Torre Eiffel">
-				<a href="https://www.toureiffel.paris/es">Visita la Torre Eiffel</a>
+		<div class="foto-portada-home-container">
+			<div class="image-main-container">
+				<img class="image-main" src="./img/eiffel.jpg" alt="Torre Eiffel a París">
 			</div>
-			<div class="grid-item">
-				<img src="img/montmartre.jpg" width="300" height="300" alt="Barri de Montmartre">
-				<a href="https://es.parisinfo.com/descubrir-paris/paseos-por-paris/montmartre-village-a-paris">Encanta't amb Montmartre</a>
-			</div>
-			<div class="grid-item">
-				<img src="img/louvre.jpg" width="300" height="300" alt="Museu del Louvre">
-				<a href="https://www.louvre.fr/es">Deixa't meravellar pel Louvre</a>
+			<div class="text-image-main">
+			  <h1>Benvinguts/des a París!</h1>
 			</div>
 		</div>
+		
+		<div>
+			<p>París és la capital de França i una de les ciutats més icòniques del món.</p>
+			<p>Ubicada al centre del país, la ciutat és coneguda per la seva rica història, cultura i patrimoni
+					arquitectònic.</p>
+		</div>
+
+		<div class="container-highlights">
+			<div class="column-highlights">
+			  <img class="image-icon" src="./img/users.svg" alt="Icona per la quantitat d'habitants">
+			  <p class="text">2,2 milions d'habitants</p>
+			</div>
+			<div class="column-highlights">
+			  <img class="image-icon" src="./img/map-pin.svg" alt="Icona per la localització">	
+			  <p class="text">Capital de França</p>
+			</div>
+			<div class="column-highlights">
+			  <img class="image-icon" src="./img/clock.svg" alt="Icona pel fus horari">
+			  <p class="text-highlights">Fus horari: UTC+01:00 (hivern) i UTC+02:00 (estiu)</p>
+			</div>
+		  </div>
+
 	</main>
 
-	<footer>
-		<p><a class="link" href="enllaços.html">Enllaços</a></p>
-	</footer>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column-left">
+					<ul class="footer-links">
+						<li><a href="index.html">Pàgina d'inici</a></li>
+						<li><a href="visites.html">Què he de fer a París?</a></li>
+						<li><a href="curiositats.html">Curiositats</a></li>
+						<li><a href="plans.html">Plans romàntics</a></li>
+						<li><a href="enllaços.html">Enllaços</a></li>
+					</ul>
+				</div>
+				<div class="footer-column-right">
+					<img src="./img/logo.png" alt="Logo en forma de cor" width="40" height="40">
+					<a href="/index.html" class="text-logo-footer">Descobreix París</a>
+				</div>
+			</div>
+		</footer>
 </body>
+
 </html>
