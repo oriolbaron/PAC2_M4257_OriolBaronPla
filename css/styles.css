@@ -397,7 +397,7 @@ li {
 }
   
 @media screen and (max-width: 768px) {
-    .grid-container {
+    .grid-container-media {
       grid-template-columns: repeat(1, 1fr);
     }
 }
