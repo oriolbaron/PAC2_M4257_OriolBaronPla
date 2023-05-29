@@ -555,7 +555,7 @@ li {
     font-size: 16px;
 }
 
-.paragraph-body {
+.paragraph-body !important {
     color:#000000;
     text-decoration: none;
     font-size: 16px;
