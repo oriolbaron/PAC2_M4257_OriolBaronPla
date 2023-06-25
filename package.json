@@ -4,9 +4,7 @@
   "description": "this is an example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	  "start": "parcel",
-    "build": "parcel build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "oriolbaron",
