@@ -218,7 +218,6 @@ html {
 }
 
 .menu {
-    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -236,19 +235,18 @@ html {
 }
 
 .menu li {
-    display: flex;
     margin-right: 16px;
     color: #000000;
     text-decoration: none;
     justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 899px) {
     .menu {
         align-items: center;
         text-align: center;
         margin: 0 auto;
-        display: block;
+        display: flex;
     }
 }
 
