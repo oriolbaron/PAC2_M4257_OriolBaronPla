@@ -281,6 +281,13 @@ html {
   justify-content: center;
 }
 
+.container-menu li {
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+  display: block;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -455,6 +462,7 @@ li {
         clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
         overflow: hidden;
         text-align: center;
+        margin: 0 auto;
     }
 }
 
