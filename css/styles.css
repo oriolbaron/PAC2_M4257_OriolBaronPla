@@ -229,14 +229,15 @@ html {
 
 @media (max-width: 768px) {
     .menu {
-        flex-direction: column;
+        display: block;
         align-items: center;
         text-align: center;
+        margin: 0 auto;
     }
 }
 
 .menu li {
-    display: inline-block;
+    display: block;
     margin-right: 16px;
     color: #000000;
     text-decoration: none;
@@ -279,13 +280,6 @@ html {
 .container-menu {
   text-align: center;
   justify-content: center;
-}
-
-.container-menu li {
-  text-align: center;
-  justify-content: center;
-  color: #000000;
-  display: block;
 }
 
 ul {
