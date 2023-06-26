@@ -286,6 +286,13 @@ html {
 .container-menu {
   text-align: center;
   justify-content: center;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .container-menu {
+       display: block;
+    }
 }
 
 ul {
@@ -304,13 +311,13 @@ ul {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
   
 @media screen and (max-width: 480px) {
     .grid-container {
       grid-template-columns: 1fr;
     }
-  }
+}
 
 .grid-item {
     position: relative;
