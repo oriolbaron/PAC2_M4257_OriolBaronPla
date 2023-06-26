@@ -238,7 +238,7 @@ html {
     color: #000000;
     text-decoration: none;
     justify-content: center;
-    margin: 10px auto;
+    margin: 10px 10px;
     display: flex;
     flex-wrap: wrap;
 }
