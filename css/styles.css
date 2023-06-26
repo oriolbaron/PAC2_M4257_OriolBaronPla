@@ -292,6 +292,7 @@ html {
 @media screen and (max-width: 768px) {
     .container-menu {
        display: block;
+       padding-inline: 10px;
     }
 }
 
