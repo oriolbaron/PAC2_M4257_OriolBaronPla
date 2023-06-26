@@ -235,14 +235,14 @@ html {
 }
 
 .menu li {
-    margin-right: 16px;
     color: #000000;
     text-decoration: none;
     justify-content: center;
+    margin: 10px auto;
 }
 
 @media (max-width: 899px) {
-    .menu {
+    .menu li {
         align-items: center;
         text-align: center;
         margin: 0 auto;
